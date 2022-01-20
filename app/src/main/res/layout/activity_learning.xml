@@ -43,51 +43,34 @@
 
 
     <EditText
-        android:id="@+id/edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/button"
         android:layout_marginRight="15dp"
-        android:layout_toLeftOf="@id/buttonmic"
-        android:hint="Tap to Speak"
         android:padding="10dp"
+        android:hint="Tap to Speak"
+        android:id="@+id/text"
+        android:layout_centerInParent="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
-
+        app:layout_constraintVertical_bias="0.5"
+        />
     <ImageView
-        android:id="@+id/buttonmic"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignParentRight="true"
         android:backgroundTint="#F9F8FA"
         android:paddingRight="10dp"
-        android:background="@drawable/ic_mic_black_off"
+        android:src="@drawable/ic_mic_black_off"
+        android:layout_alignParentRight="true"
+        android:id="@+id/button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
-
-    <EditText
-        android:id="@+id/edittext2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="15dp"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="Text"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"/>
+        app:layout_constraintVertical_bias="0.6"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
