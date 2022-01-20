@@ -1,0 +1,502 @@
+
+0,Spanish,English,Italian,Picture Url,Description,Uses,Dificulty,Points
+1,a,to,a,,,,2,1096
+2,acción,action,azione,,,,6,3288
+3,actividad,activity,attività,,,,8,4384
+4,actual,current,attuale,,,,7,3836
+5,acuerdo,agreement,accordo,,,,9,4932
+6,además,further,ulteriore,,,,7,3836
+7,agua,Water,Acqua,,,,5,2740
+8,ahí,there,là,,,,5,2740
+9,ahora,now,Ora,,,,3,1644
+10,aire,air,aria,,,,3,1644
+11,al,to the,al,,,,6,3288
+12,algo,something,qualcosa,,,,9,4932
+13,algún,some,alcuni,,,,4,2192
+14,alguna,some,alcuni,,,,4,2192
+15,algunas,some,alcuni,,,,4,2192
+16,algunos,Some,Alcuni,,,,4,2192
+17,allí,there,là,,,,5,2740
+18,alto,high,alto,,,,4,2192
+19,ambos,both of them,entrambi,,,,12,6576
+20,amor,love,amore,,,,4,2192
+21,año,year,anno,,,,4,2192
+22,años,years,anni,,,,5,2740
+23,ante,in view of,in vista di,,,,10,5480
+24,anterior,previous,precedente,,,,8,4384
+25,antes,before,prima di,,,,6,3288
+26,antonio,antonio,antonio,,,,7,3836
+27,aquel,that,quello,,,,4,2192
+28,aquella,that,quello,,,,4,2192
+29,aquellos,those,quelli,,,,5,2740
+30,aquí,here,qui,,,,4,2192
+31,arte,art,arte,,,,3,1644
+32,así,So,Così,,,,2,1096
+33,atención,attention,Attenzione,,,,9,4932
+34,aún,still,ancora,,,,5,2740
+35,aunque,even if,anche se,,,,7,3836
+36,ayer,Yesterday,Ieri,,,,9,4932
+37,bajo,under,sotto,,,,5,2740
+38,barcelona,Barcelona,Barcellona,,,,9,4932
+39,base,base,base,,,,4,2192
+40,bien,good,Buono,,,,4,2192
+41,buen,good,Buono,,,,4,2192
+42,buena,good,Buono,,,,4,2192
+43,bueno,Okay,Bene,,,,4,2192
+44,c,c,C,,,,1,548
+45,cabeza,head,testa,,,,4,2192
+46,cada,each,ogni,,,,4,2192
+47,calidad,quality,qualità,,,,7,3836
+48,calle,Street,strada,,,,6,3288
+49,cambio,change,modificare,,,,6,3288
+50,camino,road,strada,,,,4,2192
+51,campo,country,nazione,,,,7,3836
+52,capacidad,capacity,capacità,,,,8,4384
+53,capital,capital,capitale,,,,7,3836
+54,cara,expensive,caro,,,,9,4932
+55,carlos,Charles,Carlo,,,,7,3836
+56,casa,House,Casa,,,,5,2740
+57,casi,almost,quasi,,,,6,3288
+58,caso,case,Astuccio,,,,4,2192
+59,casos,cases,casi,,,,5,2740
+60,central,central,centrale,,,,7,3836
+61,centro,center,centro,,,,6,3288
+62,cerca,near,vicino,,,,4,2192
+63,ciento,hundred,centinaio,,,,7,3836
+64,cierto,certain,certo,,,,7,3836
+65,cinco,five,cinque,,,,4,2192
+66,ciudad,town,cittadina,,,,4,2192
+67,claro,Clear,Chiaro,,,,5,2740
+68,comisión,commission,commissione,,,,10,5480
+69,cómo,What,Che cosa,,,,4,2192
+70,como,What,Che cosa,,,,4,2192
+71,comunidad,community,Comunità,,,,9,4932
+72,con,with,con,,,,4,2192
+73,condiciones,terms,termini,,,,5,2740
+74,consejo,tip,Consiglio,,,,3,1644
+75,contra,against,contro,,,,7,3836
+76,cosa,thing,cosa,,,,5,2740
+77,cosas,things,cose,,,,6,3288
+78,creo,I believe,Credo,,,,9,4932
+79,cual,which,quale,,,,5,2740
+80,cualquier,any,qualunque,,,,3,1644
+81,cuando,when,quando,,,,4,2192
+82,cuanto,how much,quanto,,,,8,4384
+83,cuatro,four,quattro,,,,4,2192
+84,cuenta,bill,conto,,,,4,2192
+85,cuerpo,Body,Corpo,,,,4,2192
+86,cultura,culture,cultura,,,,7,3836
+87,da,gives,dà,,,,5,2740
+88,dado,dice,dado,,,,4,2192
+89,dar,give,dare,,,,4,2192
+90,datos,data,dati,,,,4,2192
+91,de,from,a partire dal,,,,4,2192
+92,debe,should,Dovrebbe,,,,6,3288
+93,deben,must,dovere,,,,4,2192
+94,decir,tell,raccontare,,,,4,2192
+95,del,of,di,,,,2,1096
+96,demás,the rest,il riposo,,,,8,4384
+97,dentro,within,entro,,,,6,3288
+98,derecho,right,Giusto,,,,5,2740
+99,desarrollo,developing,sviluppando,,,,10,5480
+100,desde,from,a partire dal,,,,4,2192
+101,después,after,dopo,,,,5,2740
+102,día,day,giorno,,,,3,1644
+103,días,days,giorni,,,,4,2192
+104,dice,He says,Lui dice,,,,7,3836
+105,dicho,saying,detto,,,,6,3288
+106,diferentes,different,diverso,,,,9,4932
+107,difícil,hard,duro,,,,4,2192
+108,dijo,He said,Egli ha detto,,,,7,3836
+109,dinero,money,i soldi,,,,5,2740
+110,dio,gave,ha dato,,,,4,2192
+111,dios,God,Dio,,,,3,1644
+112,dirección,address,indirizzo,,,,7,3836
+113,director,director,la direttrice,,,,8,4384
+114,don,Don,assistente,,,,3,1644
+115,donde,where,dove,,,,5,2740
+116,dos,two,Due,,,,3,1644
+117,durante,during,in occasione,,,,6,3288
+118,e,and,e,,,,3,1644
+119,edad,age,età,,,,3,1644
+120,educación,education,formazione scolastica,,,,9,4932
+121,efecto,effect,effetto,,,,6,3288
+122,ejemplo,example,esempio,,,,7,3836
+123,el,the,il,,,,3,1644
+124,él,he,lui,,,,2,1096
+125,ella,her,sua,,,,3,1644
+126,ellas,they,essi,,,,4,2192
+127,ello,it,esso,,,,2,1096
+128,ellos,they,essi,,,,4,2192
+129,embargo,embargo,embargo,,,,7,3836
+130,empresa,business,attività commerciale,,,,8,4384
+131,empresas,Business,Affare,,,,8,4384
+132,en,in,in,,,,2,1096
+133,entonces,then,poi,,,,4,2192
+134,entre,Come in,Entra,,,,7,3836
+135,equipo,team,squadra,,,,4,2192
+136,era,it was,era,,,,6,3288
+137,eran,were,erano,,,,4,2192
+138,es,is,è,,,,2,1096
+139,esa,that,quello,,,,4,2192
+140,esas,those,quelli,,,,5,2740
+141,ese,that,quello,,,,4,2192
+142,eso,that,quello,,,,4,2192
+143,esos,those,quelli,,,,5,2740
+144,espacio,space,spazio,,,,5,2740
+145,españa,Spain,Spagna,,,,5,2740
+146,español,Spanish,spagnolo,,,,7,3836
+147,española,Spanish,spagnolo,,,,7,3836
+148,especial,special,speciale,,,,7,3836
+149,esta,is,è,,,,2,1096
+150,está,this,questo,,,,4,2192
+151,estaba,I was,ero,,,,5,2740
+152,estaban,They were,Li avevamo,,,,9,4932
+153,estado,condition,condizione,,,,9,4932
+154,estados,state,stato,,,,5,2740
+155,están,is it so,è così,,,,8,4384
+156,estar,be,essere,,,,2,1096
+157,estas,are,sono,,,,3,1644
+158,este,this,questo,,,,4,2192
+159,éste,this,questo,,,,4,2192
+160,esto,this,questo,,,,4,2192
+161,estos,these,queste,,,,5,2740
+162,estoy,I'm,io sono,,,,3,1644
+163,estudio,study,studia,,,,5,2740
+164,etc,etc,eccetera,,,,3,1644
+165,europa,Europe,Europa,,,,6,3288
+166,ex,former,ex,,,,6,3288
+167,existe,exists,esiste,,,,6,3288
+168,falta,lack,mancanza,,,,4,2192
+169,familia,family,famiglia,,,,6,3288
+170,figura,figure,figura,,,,6,3288
+171,fin,end,fine,,,,3,1644
+172,final,final,finale,,,,5,2740
+173,fondo,bottom,metter il fondo a,,,,6,3288
+174,forma,shape,forma,,,,5,2740
+175,frente,forehead,fronte,,,,8,4384
+176,fue,it was,era,,,,6,3288
+177,fuera,out of,fuori da,,,,6,3288
+178,fueron,They were,Li avevamo,,,,9,4932
+179,fuerza,force,forza,,,,5,2740
+180,futuro,future,futuro,,,,6,3288
+181,general,general,generale,,,,7,3836
+182,gente,people,persone,,,,6,3288
+183,gobierno,government,governo,,,,10,5480
+184,gonzález,gonzalez,gonzalez,,,,8,4384
+185,gran,great,grande,,,,5,2740
+186,grandes,big,grande,,,,3,1644
+187,grupo,group,gruppo,,,,5,2740
+188,grupos,groups,gruppi,,,,6,3288
+189,guerra,war,guerra,,,,3,1644
+190,ha,he has,lui ha,,,,6,3288
+191,haber,to have,avere,,,,7,3836
+192,había,there was,c'era,,,,9,4932
+193,habían,had,aveva,,,,3,1644
+194,hablar,speak,parlare,,,,5,2740
+195,hace,does,fa,,,,4,2192
+196,hacer,do,fare,,,,2,1096
+197,hacia,toward,verso,,,,6,3288
+198,hacía,toward,verso,,,,6,3288
+199,han,they have,loro hanno,,,,9,4932
+200,hasta,until,Fino a,,,,5,2740
+201,hay,there are,ci sono,,,,9,4932
+202,haya,is,è,,,,2,1096
+203,he,i have,io ho,,,,6,3288
+204,hecho,done,fatto,,,,4,2192
+205,hemos,we have,noi abbiamo,,,,7,3836
+206,hijo,son,figlio,,,,3,1644
+207,historia,history,storia,,,,7,3836
+208,hizo,made,fatto,,,,4,2192
+209,hombre,man,uomo,,,,3,1644
+210,hombres,mens,Uomo,,,,4,2192
+211,hora,hour,ora,,,,4,2192
+212,horas,hours,ore,,,,5,2740
+213,hoy,today,oggi,,,,5,2740
+214,hubiera,had,aveva,,,,3,1644
+215,iba,I was going,stavo andando,,,,11,6028
+216,idea,idea,idea,,,,4,2192
+217,igual,same,stesso,,,,4,2192
+218,imagen,image,Immagine,,,,5,2740
+219,importante,important,importante,,,,9,4932
+220,incluso,even,Anche,,,,4,2192
+221,información,information,informazione,,,,11,6028
+222,interés,interest,interesse,,,,8,4384
+223,interior,inside,dentro,,,,6,3288
+224,internacional,international,internazionale,,,,13,7124
+225,investigación,research,ricerca,,,,8,4384
+226,ir,go,andare,,,,2,1096
+227,josé,Joseph,Joseph,,,,6,3288
+228,joven,young,giovane,,,,5,2740
+229,juan,Juan,Juan,,,,4,2192
+230,julio,July,luglio,,,,4,2192
+231,junto,together,insieme,,,,8,4384
+232,la,the,il,,,,3,1644
+233,lado,side,lato,,,,4,2192
+234,largo,long,lungo,,,,4,2192
+235,las,the,il,,,,3,1644
+236,le,you,voi,,,,3,1644
+237,les,them,loro,,,,4,2192
+238,ley,law,legge,,,,3,1644
+239,libertad,Liberty,Libertà,,,,7,3836
+240,libro,book,libro,,,,4,2192
+241,llegar,arrive,arrivo,,,,6,3288
+242,llegó,I arrive,io arrivo,,,,8,4384
+243,lo,it,esso,,,,2,1096
+244,los,the,il,,,,3,1644
+245,luego,later,dopo,,,,5,2740
+246,lugar,place,luogo,,,,5,2740
+247,luis,Luis,Luis,,,,4,2192
+248,luz,light,luce,,,,5,2740
+249,m,m,m,,,,1,548
+250,madre,mother,madre,,,,6,3288
+251,madrid,Madrid,Madrid,,,,6,3288
+252,mal,evil,il male,,,,4,2192
+253,mañana,morning,mattina,,,,7,3836
+254,manera,manner,maniera,,,,6,3288
+255,mano,hand,mano,,,,4,2192
+256,manos,hands,mani,,,,5,2740
+257,maría,Mary,Maria,,,,4,2192
+258,más,plus,più,,,,4,2192
+259,mayor,higher,più alto,,,,6,3288
+260,mayoría,most,più,,,,4,2192
+261,me,I,io,,,,1,548
+262,media,half,metà,,,,4,2192
+263,mediante,through,attraverso,,,,7,3836
+264,medida,measure,misurare,,,,7,3836
+265,medio,medium,medio,,,,6,3288
+266,medios,media,media,,,,5,2740
+267,mejor,better,meglio,,,,6,3288
+268,menos,less,meno,,,,4,2192
+269,mercado,market,mercato,,,,6,3288
+270,mes,month,mese,,,,5,2740
+271,meses,months,mesi,,,,6,3288
+272,méxico,Mexico,Messico,,,,6,3288
+273,mí,my,mio,,,,2,1096
+274,mi,me,me,,,,2,1096
+275,miembros,members,membri,,,,7,3836
+276,mientras,While,Mentre,,,,5,2740
+277,mil,thousand,mille,,,,8,4384
+278,millones,millions,milioni,,,,8,4384
+279,ministro,Minister,Ministro,,,,8,4384
+280,minutos,minutes,minuti,,,,7,3836
+281,mis,my,mio,,,,2,1096
+282,misma,same,stesso,,,,4,2192
+283,mismo,same,stesso,,,,4,2192
+284,modo,mode,modalità,,,,4,2192
+285,momento,moment,momento,,,,6,3288
+286,movimiento,movement,movimento,,,,8,4384
+287,muchas,many,molti,,,,4,2192
+288,mucho,much,tanto,,,,4,2192
+289,muchos,Many,Molti,,,,4,2192
+290,muerte,death,Morte,,,,5,2740
+291,mujer,woman,donna,,,,5,2740
+292,mujeres,women,donne,,,,5,2740
+293,mundo,world,mondo,,,,5,2740
+294,música,music,musica,,,,5,2740
+295,muy,very,molto,,,,4,2192
+296,nacional,national,nazionale,,,,8,4384
+297,nada,any,qualunque,,,,3,1644
+298,nadie,no one,nessuno,,,,6,3288
+299,necesario,necessary,necessario,,,,9,4932
+300,necesidad,need,bisogno,,,,4,2192
+301,ni,neither,nessuno dei due,,,,7,3836
+302,ningún,no,no,,,,2,1096
+303,ninguna,none,nessuno,,,,4,2192
+304,niño,little boy,ragazzino,,,,10,5480
+305,niños,kids,bambini,,,,4,2192
+306,nivel,level,livello,,,,5,2740
+307,no,no,no,,,,2,1096
+308,noche,night,notte,,,,5,2740
+309,nombre,Name,Nome,,,,4,2192
+310,nos,us,noi,,,,2,1096
+311,nosotros,us,noi,,,,2,1096
+312,nuestra,our,nostro,,,,3,1644
+313,nuestro,our,nostro,,,,3,1644
+314,nuestros,our,nostro,,,,3,1644
+315,nueva,new,nuovo,,,,3,1644
+316,nuevas,new,nuovo,,,,3,1644
+317,nuevo,new,nuovo,,,,3,1644
+318,nuevos,new,nuovo,,,,3,1644
+319,número,number,numero,,,,6,3288
+320,nunca,never,mai,,,,5,2740
+321,o,or,o,,,,2,1096
+322,obra,construction site,sito di costruzione,,,,17,9316
+323,obras,plays,suona,,,,5,2740
+324,ojos,eyes,occhi,,,,4,2192
+325,orden,order,ordine,,,,5,2740
+326,organización,organization,organizzazione,,,,12,6576
+327,otra,other,Altro,,,,5,2740
+328,otras,other,Altro,,,,5,2740
+329,otro,other,Altro,,,,5,2740
+330,otros,others,altri,,,,6,3288
+331,padre,dad,papà,,,,3,1644
+332,país,country,nazione,,,,7,3836
+333,países,countries,Paesi,,,,9,4932
+334,palabras,words,parole,,,,5,2740
+335,papel,paper,carta,,,,5,2740
+336,para,for,per,,,,3,1644
+337,parece,It seems,Sembra,,,,8,4384
+338,parte,part,parte,,,,4,2192
+339,partido,match,corrispondere,,,,5,2740
+340,partir,depart,partire,,,,6,3288
+341,pasado,last,Ultimo,,,,4,2192
+342,paso,He passed,è passato,,,,9,4932
+343,paz,peace,pace,,,,5,2740
+344,pero,but,ma,,,,3,1644
+345,persona,person,persona,,,,6,3288
+346,personal,personal,personale,,,,8,4384
+347,personas,persons,persone,,,,7,3836
+348,pesar,weigh,pesare,,,,5,2740
+349,pesetas,pesetas,pesetas,,,,7,3836
+350,población,population,popolazione,,,,10,5480
+351,poco,little bit,un po,,,,10,5480
+352,poder,can,potere,,,,3,1644
+353,podía,could,Potevo,,,,5,2740
+354,podría,might,potrebbe,,,,5,2740
+355,policía,police,Polizia Stradale,,,,6,3288
+356,política,politics,politica,,,,8,4384
+357,político,politician,politico,,,,10,5480
+358,por,for,per,,,,3,1644
+359,porque,because,perché,,,,7,3836
+360,posibilidad,possibility,possibilità,,,,11,6028
+361,posible,possible,possibile,,,,8,4384
+362,presencia,presence,presenza,,,,8,4384
+363,presidente,President,Presidente,,,,9,4932
+364,primer,first,primo,,,,5,2740
+365,primera,first,primo,,,,5,2740
+366,primero,first,primo,,,,5,2740
+367,primeros,first,primo,,,,5,2740
+368,principio,beginning,inizio,,,,9,4932
+369,problema,trouble,problemi,,,,7,3836
+370,problemas,problems,i problemi,,,,8,4384
+371,proceso,process,processi,,,,7,3836
+372,producción,production,produzione,,,,10,5480
+373,programa,Program,Programma,,,,7,3836
+374,pronto,early,presto,,,,5,2740
+375,propia,own,possedere,,,,3,1644
+376,propio,own,possedere,,,,3,1644
+377,proyecto,draft,brutta copia,,,,5,2740
+378,público,public,pubblico,,,,6,3288
+379,pueblo,town,cittadina,,,,4,2192
+380,puede,may,Maggio,,,,3,1644
+381,pueden,may,Maggio,,,,3,1644
+382,puerta,door,porta,,,,4,2192
+383,pues,well,bene,,,,4,2192
+384,puesto,Market Stall,Bancarella,,,,12,6576
+385,punto,point,punto,,,,5,2740
+386,puntos,points,punti,,,,6,3288
+387,que,that,quello,,,,4,2192
+388,qué,what,che cosa,,,,4,2192
+389,quien,who,chi,,,,3,1644
+390,quién,who,chi,,,,3,1644
+391,quienes,Who,Chi,,,,3,1644
+392,quiere,wants,vuole,,,,5,2740
+393,razón,reason,Motivo,,,,6,3288
+394,real,real,vero,,,,4,2192
+395,realidad,reality,realtà,,,,7,3836
+396,relación,relationship,relazione,,,,12,6576
+397,relaciones,relations,relazioni,,,,9,4932
+398,respecto,respect,rispetto,,,,7,3836
+399,resultados,results,risultati,,,,7,3836
+400,sabe,knows,conosce,,,,5,2740
+401,saber,to know,sapere,,,,7,3836
+402,salud,Health,Salute,,,,6,3288
+403,san,saint,santo,,,,5,2740
+404,se,I know,lo so,,,,6,3288
+405,sé,he,lui,,,,2,1096
+406,sea,be,essere,,,,2,1096
+407,sector,sector,settore,,,,6,3288
+408,según,according,secondo,,,,9,4932
+409,segunda,second,secondo,,,,6,3288
+410,segundo,second,secondo,,,,6,3288
+411,seguridad,security,sicurezza,,,,8,4384
+412,seis,six,sei,,,,3,1644
+413,semana,week,settimana,,,,4,2192
+414,señor,Mister,mister,,,,6,3288
+415,sentido,sense,senso,,,,5,2740
+416,ser,to be,essere,,,,5,2740
+417,será,will be,sarà,,,,7,3836
+418,sería,would,voluto,,,,5,2740
+419,serie,Serie,serie,,,,5,2740
+420,servicio,service,servizio,,,,7,3836
+421,servicios,services,Servizi,,,,8,4384
+422,si,Yes,sì,,,,3,1644
+423,sí,Yes,sì,,,,3,1644
+424,sido,been,stato,,,,4,2192
+425,siempre,always,Siempre,,,,6,3288
+426,siendo,being,essendo,,,,5,2740
+427,siglo,century,secolo,,,,7,3836
+428,sigue,follow,Seguire,,,,6,3288
+429,siguiente,following,a seguire,,,,9,4932
+430,sin,without,privo di,,,,7,3836
+431,sino,otherwise,altrimenti,,,,9,4932
+432,sistema,system,sistema,,,,6,3288
+433,situación,situation,situazione,,,,9,4932
+434,sobre,about,di,,,,5,2740
+435,social,Social,Sociale,,,,6,3288
+436,sociedad,society,società,,,,7,3836
+437,solo,only,solo,,,,4,2192
+438,sólo,alone,da solo,,,,5,2740
+439,son,are,sono,,,,3,1644
+440,soy,am,sono,,,,2,1096
+441,su,his,il suo,,,,3,1644
+442,sus,their,i loro,,,,5,2740
+443,tal,such,tale,,,,4,2192
+444,también,too,pure,,,,3,1644
+445,tampoco,either,o,,,,6,3288
+446,tan,so,così,,,,2,1096
+447,tanto,so much,tanto,,,,7,3836
+448,tarde,late,tardi,,,,4,2192
+449,te,tea,Tè,,,,3,1644
+450,tema,theme,tema,,,,5,2740
+451,tener,have,avere,,,,4,2192
+452,tengo,I have,io ho,,,,6,3288
+453,tenía,I had,avevo,,,,5,2740
+454,tiempo,weather,tempo metereologico,,,,7,3836
+455,tiene,has,ha,,,,3,1644
+456,tienen,have,avere,,,,4,2192
+457,tierra,Earth,terra,,,,5,2740
+458,tipo,type,genere,,,,4,2192
+459,toda,all,tutto,,,,3,1644
+460,todas,all,tutto,,,,3,1644
+461,todavía,yet,ancora,,,,3,1644
+462,todo,everything,Tutto quanto,,,,10,5480
+463,todos,everybody,tutti,,,,9,4932
+464,total,total,totale,,,,5,2740
+465,trabajo,job,lavoro,,,,3,1644
+466,tras,after,dopo,,,,5,2740
+467,trata,about,di,,,,5,2740
+468,través,through,attraverso,,,,7,3836
+469,tres,three,tre,,,,5,2740
+470,tu,you,voi,,,,3,1644
+471,tú,your,tuo,,,,4,2192
+472,tuvo,He had,Lui aveva,,,,6,3288
+473,última,last,Ultimo,,,,4,2192
+474,último,latest,più recente,,,,6,3288
+475,últimos,last,Ultimo,,,,4,2192
+476,un,a,un,,,,1,548
+477,una,a,un,,,,1,548
+478,unas,nails,chiodo,,,,5,2740
+479,único,unique,unico,,,,6,3288
+480,unidos,United,Unito,,,,6,3288
+481,uno,one,uno,,,,3,1644
+482,unos,some,alcuni,,,,4,2192
+483,uso,use,uso,,,,3,1644
+484,usted,you,voi,,,,3,1644
+485,va,he,lui,,,,2,1096
+486,valor,value,valore,,,,5,2740
+487,van,go,andare,,,,2,1096
+488,varios,various,vari,,,,7,3836
+489,veces,times,volte,,,,5,2740
+490,ver,see,vedere,,,,3,1644
+491,verdad,truth,verità,,,,5,2740
+492,vez,time,volta,,,,4,2192
+493,vida,life,vita,,,,4,2192
+494,vista,view,Visualizza,,,,4,2192
+495,visto,viewed,visto,,,,6,3288
+496,voz,voice,voce,,,,5,2740
+497,y,Y,sì,,,,1,548
+498,ya,already,già,,,,7,3836
+499,yo,me,me,,,,2,1096
+500,zona,zone,zona,,,,4,2192
