@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/drawable/backgroundgreen.xml" value="0.26974358974358975" />
         <entry key="app/src/main/res/drawable/buttonlanguages.xml" value="0.2101851851851852" />
         <entry key="app/src/main/res/drawable/ic_mic_black_24dp.xml" value="0.26974358974358975" />
+        <entry key="app/src/main/res/drawable/ic_mic_black_off.xml" value="0.22916666666666666" />
         <entry key="app/src/main/res/layout/activity_language.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_learning.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16944444444444445" />

@@ -6,7 +6,10 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.os.Build;
@@ -23,53 +26,108 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Locale;
 
+import static android.icu.lang.UCharacter.toLowerCase;
+
 public class LearningActivity extends AppCompatActivity {
     public static final Integer RecordAudioRequestCode = 1;
     private SpeechRecognizer speechRecognizer;
-    private EditText editText;
+    private TextView textViewWord,textViewLanguage,textViewLevel,textViewWordNumber;
     private ImageView micButton;
 
-//    public static final Integer RecordAudioRequestCode = 1;
-//    private SpeechRecognizer speechRecognizer;
-//    TextView textlanguage2, textlevel;
-//    EditText editText, editText2;
-//    ImageView buttonMic;
 
-    int language = 0, level = 1, wordnumber = 2;  //words starts at line 3
+    int language, level = 1, wordnumber;  //words starts at line 3 - language 2 is english
+    String word="";
+
+    SharedPreferences sharedpreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learning);
 
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            int language = extras.getInt("language");
-        }
-
-//        editText = findViewById(R.id.text);
-//        buttonMic = findViewById(R.id.buttonmic);
-//        editText2 = findViewById(R.id.edittext2);
-
-
-
-
         if(ContextCompat.checkSelfPermission(this,Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED){
             checkPermission();
         }
 
-        editText = findViewById(R.id.text);
-        micButton = findViewById(R.id.button);
+        textViewWord = findViewById(R.id.textviewword);
+        textViewLanguage = findViewById(R.id.textlanguage2);
+        textViewLevel=findViewById(R.id.textlevel);
+        textViewWordNumber=findViewById(R.id.textwordnumber);
+        micButton = findViewById(R.id.imagemic);
         speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this);
-
         final Intent speechRecognizerIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-        speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-        speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+
+        sharedpreferences = getSharedPreferences("mypref",Context.MODE_PRIVATE);
+
+        Bundle extras = getIntent().getExtras();  //get chosen language
+        if (extras != null) {
+            int language = extras.getInt("language");
+
+            if(language==1){
+                textViewLanguage.setText("Spanish");
+                speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "es-ES");
+                wordnumber=sharedpreferences.getInt("wordnumberkeyspanish", 2);
+            }
+            else if(language==2){
+                textViewLanguage.setText("English");
+                speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "eng-ENG");
+                wordnumber=sharedpreferences.getInt("wordnumberkeyenglish", 2);
+            }
+            else{
+                textViewLanguage.setText("Italian");
+                speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "it-IT");
+                wordnumber=sharedpreferences.getInt("wordnumberkeyitalian", 2);
+            }
+        }
+        int language = extras.getInt("language");
+
+//        speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+//        speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+
+        word=nextWord(wordnumber-1,language);
+        textViewWord.setText(word);
+        textViewWordNumber.setText(String.valueOf(wordnumber-1));
+
+
+        textViewLanguage.setOnClickListener(new View.OnClickListener() {  /// cheat to delete before production
+            @Override
+            public void onClick(View view) {
+                wordnumber=wordnumber-1;
+                textViewWord.setText(nextWord(wordnumber,language));
+                word=nextWord(wordnumber,language);
+                textViewWordNumber.setText(String.valueOf(wordnumber-1));
+
+                SharedPreferences.Editor editor = sharedpreferences.edit();
+                editor.putInt("wordnumberkey", wordnumber);
+                editor.commit();
+            }
+        });
+
+        textViewWordNumber.setOnClickListener(new View.OnClickListener() { /// cheat to delete before production
+            @Override
+            public void onClick(View view) {
+                wordnumber++;
+                textViewWord.setText(nextWord(wordnumber,language));
+                word=nextWord(wordnumber,language);
+                textViewWordNumber.setText(String.valueOf(wordnumber-1));
+
+                SharedPreferences.Editor editor = sharedpreferences.edit();
+                editor.putInt("wordnumberkey", wordnumber);
+                editor.commit();
+            }
+        });
+
+
+
 
         speechRecognizer.setRecognitionListener(new RecognitionListener() {
             @Override
@@ -79,8 +137,8 @@ public class LearningActivity extends AppCompatActivity {
 
             @Override
             public void onBeginningOfSpeech() {
-                editText.setText("");
-                editText.setHint("Listening...");
+//                editText.setText("");
+//                editText.setHint("Listening...");
             }
 
             @Override
@@ -107,7 +165,37 @@ public class LearningActivity extends AppCompatActivity {
             public void onResults(Bundle bundle) {
                 micButton.setImageResource(R.drawable.ic_mic_black_off);
                 ArrayList<String> data = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
-                editText.setText(data.get(0));
+                String resultword=data.get(0);
+                //Exceptions synonyms
+                if(resultword.equals("2")){
+                    resultword="to";}
+                if(resultword.equals("are")){
+                    resultword="air";}
+
+                if(resultword.equals(word)){
+                    Toast.makeText(getApplicationContext(), "Nice !", Toast.LENGTH_SHORT).show();
+                    textViewWord.setText(nextWord(wordnumber,language));
+                    word=nextWord(wordnumber,language);
+                    wordnumber++;
+                    textViewWordNumber.setText(String.valueOf(wordnumber-1));
+
+                    SharedPreferences.Editor editor = sharedpreferences.edit();
+                    if(language==1){
+                        editor.putInt("wordnumberkeyspanish", wordnumber);
+                    }
+                    if(language==2){
+                        editor.putInt("wordnumberkeyenglish", wordnumber);
+
+                    }
+                    if(language==3){
+                        editor.putInt("wordnumberkeyitalian", wordnumber);
+                    }
+                    editor.commit();
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "Try again... You said "+resultword, Toast.LENGTH_SHORT).show();
+
+                }
             }
 
             @Override
@@ -144,6 +232,7 @@ public class LearningActivity extends AppCompatActivity {
         speechRecognizer.destroy();
     }
 
+
     private void checkPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.RECORD_AUDIO},RecordAudioRequestCode);
@@ -157,6 +246,35 @@ public class LearningActivity extends AppCompatActivity {
             if(grantResults[0] == PackageManager.PERMISSION_GRANTED)
                 Toast.makeText(this,"Permission Granted",Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public String nextWord(int wordnumber,int language){
+        InputStream is = getResources().openRawResource(R.raw.wordlist);
+
+        // Reads text from character-input stream, buffering characters for efficient reading
+        BufferedReader reader = new BufferedReader(
+                new InputStreamReader(is, Charset.forName("UTF-8"))
+        );
+        // Initialization
+
+        String line = "";
+        // Initialization
+
+        try {
+            // Step over headers
+            reader.readLine();
+
+            for (int i = 0; i < wordnumber+1; i++) {
+                line = reader.readLine();  // to get to next line
+            }
+
+            String[] tokens = line.split(",");
+            return toLowerCase(tokens[language]);  //number to choose column
+
+
+        } catch (IOException e) {
+        }
+        return "Failed to get new word...";
     }
 
 
