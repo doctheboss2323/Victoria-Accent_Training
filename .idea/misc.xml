@@ -5,12 +5,19 @@
       <map>
         <entry key="app/src/main/res/drawable/backgroundblack.xml" value="0.2101851851851852" />
         <entry key="app/src/main/res/drawable/backgroundgreen.xml" value="0.26974358974358975" />
+        <entry key="app/src/main/res/drawable/backgroundlanguageswhite.xml" value="0.259375" />
+        <entry key="app/src/main/res/drawable/backgroundlearningblack.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/backgroundwordgrey.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/buttonlanguages.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/drawable/buttonlearning.xml" value="0.259375" />
         <entry key="app/src/main/res/drawable/ic_mic_black_24dp.xml" value="0.26974358974358975" />
         <entry key="app/src/main/res/drawable/ic_mic_black_off.xml" value="0.22916666666666666" />
+        <entry key="app/src/main/res/drawable/micbackgroundwhitecircle.xml" value="0.259375" />
         <entry key="app/src/main/res/layout/activity_language.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_learning.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16944444444444445" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1390625" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1390625" />
       </map>
     </option>
   </component>

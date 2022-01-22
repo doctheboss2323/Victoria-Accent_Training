@@ -6,6 +6,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -20,11 +22,14 @@ import android.speech.SpeechRecognizer;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.BounceInterpolator;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -89,42 +94,43 @@ public class LearningActivity extends AppCompatActivity {
             }
         }
         int language = extras.getInt("language");
+//        wordnumber=2;  // Use when need to zero all scores
 
 //        speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
 //        speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
 
         word=nextWord(wordnumber-1,language);
         textViewWord.setText(word);
-        textViewWordNumber.setText(String.valueOf(wordnumber-1));
+        textViewWordNumber.setText("Word: "+String.valueOf(wordnumber-1));
 
 
-        textViewLanguage.setOnClickListener(new View.OnClickListener() {  /// cheat to delete before production
-            @Override
-            public void onClick(View view) {
-                wordnumber=wordnumber-1;
-                textViewWord.setText(nextWord(wordnumber,language));
-                word=nextWord(wordnumber,language);
-                textViewWordNumber.setText(String.valueOf(wordnumber-1));
-
-                SharedPreferences.Editor editor = sharedpreferences.edit();
-                editor.putInt("wordnumberkey", wordnumber);
-                editor.commit();
-            }
-        });
-
-        textViewWordNumber.setOnClickListener(new View.OnClickListener() { /// cheat to delete before production
-            @Override
-            public void onClick(View view) {
-                wordnumber++;
-                textViewWord.setText(nextWord(wordnumber,language));
-                word=nextWord(wordnumber,language);
-                textViewWordNumber.setText(String.valueOf(wordnumber-1));
-
-                SharedPreferences.Editor editor = sharedpreferences.edit();
-                editor.putInt("wordnumberkey", wordnumber);
-                editor.commit();
-            }
-        });
+//        textViewLanguage.setOnClickListener(new View.OnClickListener() {  /// cheat to delete before production
+//            @Override
+//            public void onClick(View view) {
+//                wordnumber=wordnumber-1;
+//                textViewWord.setText(nextWord(wordnumber,language));
+//                word=nextWord(wordnumber,language);
+//                textViewWordNumber.setText("Word: "+String.valueOf(wordnumber-1));
+//
+//                SharedPreferences.Editor editor = sharedpreferences.edit();
+//                editor.putInt("wordnumberkey", wordnumber);
+//                editor.commit();
+//            }
+//        });
+//
+//        textViewWordNumber.setOnClickListener(new View.OnClickListener() { /// cheat to delete before production
+//            @Override
+//            public void onClick(View view) {
+//                wordnumber++;
+//                textViewWord.setText(nextWord(wordnumber,language));
+//                word=nextWord(wordnumber,language);
+//                textViewWordNumber.setText(String.valueOf(wordnumber-1));
+//
+//                SharedPreferences.Editor editor = sharedpreferences.edit();
+//                editor.putInt("wordnumberkey", wordnumber);
+//                editor.commit();
+//            }
+//        });
 
 
 
@@ -165,20 +171,23 @@ public class LearningActivity extends AppCompatActivity {
             public void onResults(Bundle bundle) {
                 micButton.setImageResource(R.drawable.ic_mic_black_off);
                 ArrayList<String> data = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
-                String resultword=data.get(0);
+                String resultword=toLowerCase(data.get(0));
                 //Exceptions synonyms
                 if(resultword.equals("2")){
                     resultword="to";}
                 if(resultword.equals("are")){
                     resultword="air";}
-
+                if(resultword.equals("hi")){
+                    resultword="high";}
+                //check if user said right word
                 if(resultword.equals(word)){
                     Toast.makeText(getApplicationContext(), "Nice !", Toast.LENGTH_SHORT).show();
                     textViewWord.setText(nextWord(wordnumber,language));
                     word=nextWord(wordnumber,language);
                     wordnumber++;
-                    textViewWordNumber.setText(String.valueOf(wordnumber-1));
+                    activatelevels();
 
+                    //save new wordnumber for specific language
                     SharedPreferences.Editor editor = sharedpreferences.edit();
                     if(language==1){
                         editor.putInt("wordnumberkeyspanish", wordnumber);
@@ -192,9 +201,9 @@ public class LearningActivity extends AppCompatActivity {
                     }
                     editor.commit();
                 }
+
                 else{
                     Toast.makeText(getApplicationContext(), "Try again... You said "+resultword, Toast.LENGTH_SHORT).show();
-
                 }
             }
 
@@ -224,6 +233,12 @@ public class LearningActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        activatelevels();
     }
 
     @Override
@@ -277,5 +292,22 @@ public class LearningActivity extends AppCompatActivity {
         return "Failed to get new word...";
     }
 
+    private void activatelevels() {
+        int level=(wordnumber-1)/30+1;
+        textViewLevel.setText("Lvl "+ level);
+        textViewWordNumber.setText("Word: "+String.valueOf(wordnumber-1));
+        if((wordnumber-1)%30==0){ //get bounce as level up
+            bounceAnim(textViewLevel);
+        }
+    }
+
+    public void bounceAnim(TextView button){
+        ObjectAnimator animY = ObjectAnimator.ofFloat(button, "translationY", -50f, 0f);
+        animY.setRepeatMode(ValueAnimator.REVERSE);
+        animY.setDuration(200);//1sec
+        animY.setInterpolator(new BounceInterpolator());
+        animY.setRepeatCount(0);
+        animY.start();
+    }
 
 }

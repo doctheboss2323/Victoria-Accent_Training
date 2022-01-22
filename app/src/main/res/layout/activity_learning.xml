@@ -22,65 +22,78 @@
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <TextView
         android:id="@+id/textwordnumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/backgroundlearningblack"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         android:fontFamily="@font/featherfont"
         android:gravity="center"
         android:textColor="@android:color/black"
         android:text="word num"
-        android:textSize="35sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.925" />
 
     <TextView
         android:id="@+id/textlevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/backgroundlearningblack"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         android:fontFamily="@font/featherfont"
         android:gravity="center"
         android:textColor="@android:color/black"
-        android:text="Level"
-        android:textSize="35sp"
+        android:text="Level 1"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.925" />
 
 
     <TextView
         android:id="@+id/textviewword"
-        android:layout_toLeftOf="@id/imagemic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/featherfont"
         android:gravity="center"
-        android:textColor="@android:color/black"
+        android:textColor="@color/white"
         android:text="Word"
-        android:textSize="35sp"
+        android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintVertical_bias="0.4"
         />
 
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#F9F8FA"
-        android:paddingRight="10dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/micbackgroundwhitecircle"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:backgroundTint="#FFFFFF"
         android:src="@drawable/ic_mic_black_off"
         android:layout_alignParentRight="true"
         android:id="@+id/imagemic"
@@ -89,6 +102,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65"/>
+        app:layout_constraintVertical_bias="0.6"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
